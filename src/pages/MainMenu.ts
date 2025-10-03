@@ -2,23 +2,25 @@ import '../css/MainMenuStyle.css';
 
 const MainMenu = () => {
   const mainMenu = document.createElement('div');
-  const usernameInput = document.createElement('input');
-  const startButton = document.createElement('button');
-  const gameTitle = document.createElement('h1');
- 
+  mainMenu.className = 'mainMenu';
+
   const rightBottom = document.createElement('div');
   rightBottom.className = 'right-bottom';
 
-  mainMenu.className = 'mainMenu';
-  
-  startButton.textContent = 'Start';
-
+  const usernameInput = document.createElement('input');
   usernameInput.placeholder = 'Enter your username';
 
+  const startButton = document.createElement('button');
+  startButton.textContent = 'Start';
+  startButton.addEventListener('click', () => {
+    window.location.href = '/game-menu'; 
+  });
+
+  const gameTitle = document.createElement('h1');
   gameTitle.textContent = "Skibidi.io";
-  
 
   mainMenu.appendChild(gameTitle);
+
   rightBottom.appendChild(usernameInput);
   rightBottom.appendChild(startButton);
 
