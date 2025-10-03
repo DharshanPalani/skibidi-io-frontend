@@ -1,17 +1,19 @@
-import Menu from "./views/menu";
-import GameMenu from "./views/gameMenu";
-
+import MainMenu from "./pages/MainMenu";
 const router = (app : HTMLDivElement, path : string) => {
   app.innerHTML = '';
   switch(path) {
     case '/':
-      app.innerHTML = '<h1> Home </h1>';
-      break;
-    case '/menu':
-      app.append(Menu());
+      app.append(MainMenu());
       break;
     case '/game-menu':
-      app.appendChild(GameMenu());
+      break;
+    case '/create-menu':
+      break;
+    case '/join-menu':
+      break;
+    case '/lobby-menu':
+      break;
+    case '/game-view':
       break;
     default:
       app.innerHTML = '<h1> Invalid shit </h1>';

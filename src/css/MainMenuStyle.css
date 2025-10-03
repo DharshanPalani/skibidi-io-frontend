@@ -1,0 +1,36 @@
+.mainMenu {
+  background-color: black;
+  color: gray;
+
+
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.mainMenu h1 {
+  font-size: 50px;
+}
+
+.right-bottom {
+  display: flex;
+  padding: 20px;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.right-bottom input {
+  padding: 10px;
+  border: 2px solid grey;
+  border-radius: 20px;
+}
+
+.right-bottom button {
+  width: 100px;
+  height: 30px;
+  border-radius: 20px;
+}

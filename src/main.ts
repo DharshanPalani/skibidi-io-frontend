@@ -1,4 +1,4 @@
-import "./style.css";
+import "./css/style.css";
 import { io } from "socket.io-client";
 import router from "./router";
 
@@ -26,6 +26,5 @@ const main = () => {
 
   return 0;
 }
-
 
 main();
