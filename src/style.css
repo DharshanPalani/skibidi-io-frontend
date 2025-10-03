@@ -1,0 +1,10 @@
+body {
+  background-color: black;
+  color: white;
+
+}
+
+.joinBtn {
+  background-color: red;
+  border: 0px;
+}
