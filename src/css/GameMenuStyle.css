@@ -1,0 +1,45 @@
+.gameMenu {
+  display: grid;
+  grid-template-columns: 1fr 180px;
+  height: 100vh;
+  background-color: black;
+  color: wheat;
+  overflow: hidden;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px;
+  border-left: 1px solid #222;
+  background-color: rgb(14, 13, 13);
+}
+
+.right-side button {
+  border: 1px solid #555;
+  border-radius: 20px;
+  margin: 6px 0;
+  width: 100px;
+  height: 32px;
+  background-color: transparent;
+  color: #eee;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.right-side button:hover {
+  background-color: #2e2e2e;
+  border-color: white;
+  color: white;
+}

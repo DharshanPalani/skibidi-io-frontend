@@ -1,0 +1,22 @@
+.publicLobbyList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.lobbyItem {
+  font-size: 15px;
+  padding: 8px 12px;
+  border-bottom: 1px solid #222;
+  color: #ddd;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.lobbyItem:hover {
+  background-color: #181818;
+  color: wheat;
+}
