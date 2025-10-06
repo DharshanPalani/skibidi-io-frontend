@@ -26,10 +26,30 @@
   padding: 10px;
   border: 2px solid grey;
   border-radius: 20px;
+  background-color: transparent;
+  color: white;
+  outline: none;
+}
+
+.right-bottom input:focus {
+  border-color: white;
 }
 
 .right-bottom button {
-  width: 100px;
-  height: 30px;
+  border: 1px solid #555;
   border-radius: 20px;
+  margin: 6px 0;
+  width: 100px;
+  height: 32px;
+  background-color: transparent;
+  color: #eee;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.right-bottom button:hover {
+  background-color: #2e2e2e;
+  color: white;
+  border-color: white;
 }
