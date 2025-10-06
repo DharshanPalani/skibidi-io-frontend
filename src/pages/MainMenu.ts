@@ -1,4 +1,5 @@
 import '../css/MainMenuStyle.css';
+import usePlayerAuth from '../hooks/usePlayerAuth';
 
 const MainMenu = () => {
   const mainMenu = document.createElement('div');
@@ -13,7 +14,7 @@ const MainMenu = () => {
   const startButton = document.createElement('button');
   startButton.textContent = 'Start';
   startButton.addEventListener('click', () => {
-    window.location.href = '/game-menu'; 
+    usePlayerAuth(usernameInput.value);
   });
 
   const gameTitle = document.createElement('h1');
