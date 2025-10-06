@@ -1,6 +1,6 @@
 import MainMenu from "./pages/MainMenu";
 import GameMenu from "./pages/GameMenu";
-
+import CreateMenu from "./pages/CreateMenu";
 const router = (app : HTMLDivElement, path : string) => {
   app.innerHTML = '';
   switch(path) {
@@ -11,6 +11,7 @@ const router = (app : HTMLDivElement, path : string) => {
       app.append(GameMenu());
       break;
     case '/create-menu':
+      app.append(CreateMenu());
       break;
     case '/join-menu':
       break;

@@ -1,0 +1,88 @@
+.createMenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: black;
+  color: white;
+  height: 100vh;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.createMenu h2 {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.formField {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.formField label {
+  font-size: 0.9rem;
+  color: white;
+}
+
+/* Styles UI comonent I think idk*/
+input[type="number"],
+select {
+  background-color: rgb(14, 13, 13);
+  color: white;
+  border: 1px solid #555;
+  border-radius: 6px;
+  padding: 8px 10px;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"]:focus,
+select:focus {
+  border-color: white;
+}
+
+select {
+  appearance: none;
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+  padding-right: 30px;
+}
+
+.createButton {
+  margin-top: 30px;
+  border: 1px solid #555;
+  border-radius: 20px;
+  width: 160px;
+  height: 40px;
+  background-color: transparent;
+  color: #eee;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.createButton:hover {
+  background-color: #2e2e2e;
+  border-color: white;
+  color: wheat;
+}
