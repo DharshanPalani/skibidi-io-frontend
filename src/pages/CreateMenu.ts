@@ -1,6 +1,9 @@
 import "../css/CreateMenuStyle.css";
 
 import FieldsSection from "../components/FieldsSection";
+import Difficulty from "../enums/Difficulty";
+
+import useCreateRoom from "../hooks/useCreateRoom";
 
 const CreateMenu = () => {
   const createMenu = document.createElement("div");
@@ -28,6 +31,11 @@ const CreateMenu = () => {
   const createButton = document.createElement("button");
   createButton.className = "createButton";
   createButton.textContent = "Create Room";
+
+  createButton.addEventListener('click', () => {
+    useCreateRoom(false, Difficulty.Easy, 2)  
+  });
+
   createMenu.appendChild(createButton);
 
   return createMenu;

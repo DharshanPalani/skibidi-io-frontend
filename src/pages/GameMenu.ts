@@ -1,5 +1,6 @@
 import "../css/GameMenuStyle.css";
 import PublicLobbyList from "../components/PublicLobbyList";
+import router from "../router";
 
 const GameMenu = () => {
   const gameMenu = document.createElement("div");
@@ -19,6 +20,11 @@ const GameMenu = () => {
   const createButton = document.createElement("button");
   createButton.className = "createButton";
   createButton.textContent = "Create";
+
+  createButton.addEventListener('click', () => {
+    router("create-menu");
+  });
+
 
   rightSide.appendChild(joinButton);
   rightSide.appendChild(createButton);

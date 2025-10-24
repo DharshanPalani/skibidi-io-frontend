@@ -1,6 +1,5 @@
 import router from "../router";
 import api from "./api";
-import { returnApp } from "./returnApp";
 import { connectSocket } from "./socket";
 
 interface VerifyPlayerPayload {
@@ -34,8 +33,7 @@ const usePlayerAuth = async (username: string) => {
     const socket = connectSocket();
     socket.emit("authenticate", { uuid: verifyData.uuid });
 
-    window.history.pushState({}, "", "/game-menu");
-    router(returnApp(), "/game-menu");
+    router("game-menu");
   } catch (error: any) {
     console.error(error);
     alert(
