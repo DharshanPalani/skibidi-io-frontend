@@ -4,7 +4,7 @@ const PlayerSection = () => {
   const playersInput = document.createElement("input");
   playersInput.type = "number";
   playersInput.value = "2";
-
+  playersInput.id = "maxPlayers"
   const playerSection = {
     label: playersLabel,
     input: playersInput,

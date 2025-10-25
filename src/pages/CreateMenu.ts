@@ -1,7 +1,6 @@
 import "../css/CreateMenuStyle.css";
 
 import FieldsSection from "../components/FieldsSection";
-import Difficulty from "../enums/Difficulty";
 
 import useCreateRoom from "../hooks/useCreateRoom";
 
@@ -33,7 +32,15 @@ const CreateMenu = () => {
   createButton.textContent = "Create Room";
 
   createButton.addEventListener('click', () => {
-    useCreateRoom(false, Difficulty.Easy, 2)  
+    const privacySelectElement = document.getElementById('privacySelect') as HTMLSelectElement;
+    const privacySelectedValue = privacySelectElement.value;
+    const isPrivate = privacySelectedValue === "Private";
+
+    const difficultySelectElement = document.getElementById('difficultySelect') as HTMLSelectElement;
+
+    const maxPlayersInputElement = document.getElementById('maxPlayers') as HTMLInputElement;
+
+    useCreateRoom(isPrivate, difficultySelectElement.value, Number(maxPlayersInputElement.value));
   });
 
   createMenu.appendChild(createButton);

@@ -1,9 +1,8 @@
-import Difficulty from "../enums/Difficulty";
+const useCreateRoom = (isPrivate : boolean, difficulty : string, maxPlayers : number) => {
 
-const useCreateRoom = (isPrivate : boolean, difficulty : Difficulty, maxPlayers : number) => {
-  if(difficulty == Difficulty.Easy) {
-    alert("Grow up lamo!");
-  }
+  alert(isPrivate);
+  alert(difficulty);
+  alert(maxPlayers);
 }
 
 export default useCreateRoom;
